@@ -1,0 +1,4 @@
+#Tue Feb 18 17:20:14 EST 2020
+base.0=/Users/adityabansal/Desktop/Main/Subjects/spring20/Distributed System/projects/P2a/GroupMessenger1/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex
