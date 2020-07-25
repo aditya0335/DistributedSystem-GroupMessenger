@@ -1,10 +1,10 @@
-## DistributedSystem-GroupMessenger
+# DistributedSystem-GroupMessenger
  
  CSE 486/586 Distributed Systems Programming Assignment 2, Part A
 
 Group Messenger with a Local Persistent Key-Value Table
 
-#Introduction
+## Introduction
 
 The teaching staff hopes you had fun working on PA1! If you got frustrated, we feel for you and believe us, we were there too. While it is expected to be frustrating in the beginning, we promise you, it will get better and you will enjoy more and more as you do it. You might even start enjoying reading the Android documentation because it *is* actually the single best place to get great information about Android. We do hope, though, that you now understand a bit more about what it means to write networked apps on Android.
 
@@ -12,7 +12,7 @@ Now back to the assignment: this assignment builds on the previous simple messen
 
 The rest of the description can be long. Please don’t “tl;dr”! Please read to the end first and get the overall picture. Then please revisit as you go!
 
-Step 0: Importing the project template
+## Step 0: Importing the project template
 
 Unlike the previous assignment, we will have strict requirements for the UI as well as a few other components. In order to provide you more help in meeting these requirements, we have a project template you can import to Android Studio.
 
@@ -28,7 +28,7 @@ a. Make sure that you copy the correct directory. After unzipping, the directory
 
 5. Use the project template for implementing all the components for this assignment.
  
-# Step 1: Writing a Content Provider
+## Step 1: Writing a Content Provider
 
 Your first task is to write a content provider. This provider should be used to store all messages, but the abstraction it provides should be a general key-value table. Before you start, please read the following to understand the basics of a content provider: http://developer.android.com/guide/topics/providers/content-providers.html
 
@@ -82,7 +82,7 @@ null // no need to support the ​sortOrder ​parameter
 
 10. If your provider does not pass PTest, there will be no point for this portion of the assignment.
 
-Step 2: Implementing Multicast
+## Step 2: Implementing Multicast
 The final step is implementing multicast, i.e., sending messages to multiple AVDs.​ ​The requirements are the following.
 
 1. Your app should multicast every user-entered message to all app instances (​including the one that is sending the message​). ​In the rest of the description, “multicast” always means sending a message to all app instances.
@@ -133,7 +133,7 @@ However, there is no grading component for this.
 9. Please read the notes at the end of this document. You might run into certain problems,
 and the notes might give you some ideas about a couple of potential problems.
 
-Testing
+## Testing
 
 We have testing programs to help you see how your code does with our grading criteria. If you find any rough edge with the testing programs, please report it on Piazza so the teaching staff can fix it. The instructions are the following:
 
@@ -198,11 +198,11 @@ grader and Android Studio at the same time. As far as I know, this happens rarel
 
 CSE 486/586 Distributed Systems
 
-Programming Assignment 2, Part B
+# Programming Assignment 2, Part B
 
 Group Messenger with Total and FIFO Ordering Guarantees
 
-Introduction
+## Introduction
 
 We are now ready to implement more advanced concepts and in this assignment you will add ordering guarantees to your group messenger. The guarantees you will implement are total ordering as well as FIFO ordering. As with part A, you will store all the messages in your content provider. The different is that when you store the messages and assign sequence numbers, your mechanism needs to provide total and FIFO ordering guarantees.  Once again, please follow everything exactly. Otherwise, it might result in getting no point for this assignment.
 
@@ -221,11 +221,11 @@ a.	Make sure that you copy the correct directory. After unzipping, the directory
 
 5.	Use the project template for implementing all the components for this assignment.
 
-# Step 1: Writing a Content Provider
+## Step 1: Writing a Content Provider
 
 As with the previous assignment, you need to have a working content provider. The requirements are almost exactly the same as the previous assignment. The only exception is the URI, which is “content://edu.buffalo.cse.cse486586.groupmessenger2.provider”.
 
-# Step 2: Implementing Total and FIFO Ordering Guarantees
+## Step 2: Implementing Total and FIFO Ordering Guarantees
 
 This is the meat of this assignment and you need to implement total and FIFO guarantees. You will need to design an algorithm that does this and implement it. An important thing to keep in mind is that there will be a failure of an app instance in the middle of the execution. The requirements are:
 
@@ -279,7 +279,7 @@ v.	emulator-5562: “5562”
 
 10.	Please read the notes at the end of this document. You might run into certain problems, and the notes might give you some ideas about a couple of potential problems.
 
-Testing
+## Testing
 
 We have testing programs to help you see how your code does with our grading criteria. If you find any rough edge with the testing programs, please report it on Piazza so the teaching staff can fix it. The instructions are the following:
 
